@@ -1,0 +1,34 @@
+header{
+   background-color: red; 
+   height: 5rem;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+   justify-content: center;
+   padding: 1rem;
+   
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li{
+    padding-right: 1rem;
+
+}
+
+nav a{
+ color: white;
+ text-decoration: none;
+ font-size: 1.5rem;
+ font-weight: bold;
+ white-space: nowrap;
+}
+
+nav  a:hover{
+color: gray;
+   }
