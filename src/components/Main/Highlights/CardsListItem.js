@@ -4,7 +4,7 @@ import Card from './Card'
 const CardsListItem = ({product}) => {
   
   return (
-    <li>
+    <li className='cardlist'>
       <Card product={product}/>
     </li>
   )

@@ -28,15 +28,17 @@ const data = [
 ]
 const Highlights = () => {
     return (
-        <div>
+        <div className='highlights'>
             <div>
                 <h1>Specials</h1>
                 <button>Menu online</button>
             </div>
-            {data.map((product, index) =>
-                // <h1>vff</h1>
-                <CardsListItem key ={product.id} product={product}/>
-            )}
+            <ul className='containerlist'>
+                {data.map((product, index) =>
+                    // <h1>vff</h1>
+                    <CardsListItem key ={product.id} product={product}/>
+                )}
+            </ul>
         </div>
     )
 }

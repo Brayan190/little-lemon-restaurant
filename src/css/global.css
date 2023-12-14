@@ -1,34 +1,281 @@
-header{
-   background-color: red; 
-   height: 5rem;
+:root {
+    --color-primary: #495e57;
+    /* Color primario */
+    --color-primary-2: #f4ce14;
+    /* Color primario */
+    --color-secondary: #ee9972;
+    /* Color secundario */
+    --color-secondary-2: #fbdabb;
+    /* Color secundario */
+    --color-highlight: #edefee;
+    /* Color secundario */
+    --color-highlight-2: #333333;
+    /* Color secundario */
+
 }
 
-nav{
+body {
+    /* background-color: var(--color-primary); */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    list-style-type: none;
+
+
+}
+
+
+body h1 {
+    font-size: 64px;
+    font-family: 'Markazi Text', serif;
+}
+
+body h2,
+h3 {
+    font-size: 40px;
+    font-family: 'Markazi Text', serif;
+}
+
+body p {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+body a {
+    text-decoration: none;
+    color: var(--color-highlight-2);
+    font-size: 2rem;
+    font-family: 'Markazi Text', sans-serif;
+}
+
+
+
+nav {
     display: grid;
     grid-template-columns: 1fr 2fr;
-   justify-content: center;
-   padding: 1rem;
-   
+    justify-content: center;
+    /* padding: 1rem; */
+    padding-left: 5%;
+    padding-right: 5%;
+
 }
+
+nav div {
+    align-self: center;
+}
+
 
 nav ul {
     display: flex;
     list-style: none;
 }
 
-nav li{
+nav li {
     padding-right: 1rem;
 
 }
 
-nav a{
- color: white;
- text-decoration: none;
- font-size: 1.5rem;
- font-weight: bold;
- white-space: nowrap;
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
-nav  a:hover{
-color: gray;
-   }
+a:hover {
+    color: var(--color-primary-2);
+}
+
+
+footer {
+    /* background-color: green;  */
+    padding-left: 5%;
+    padding-right: 5%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    white-space: nowrap;
+
+}
+
+footer div{
+    padding: 1rem;
+}
+footer ul {
+    list-style-type: none;
+    margin: .5rem;
+    padding: 0;
+}
+
+
+footer .container_img {
+    align-self: center;
+}
+
+
+.hero_section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+padding-top: 2rem;
+    /* align-items: center; */
+}
+
+button {
+    font-family: 'Markazi Text', serif;
+    font-size: 1.5rem;
+    background-color: var(--color-primary-2);
+    padding: .5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: var(--color-highlight-2);
+    border-radius: 16px;
+    border: none;
+}
+
+.hero_section h1,
+h2 {
+    margin: 0
+}
+
+.hero_section h1 {
+    color: var(--color-primary-2);
+}
+
+.hero_section h2,
+p {
+    color: var(--color-highlight);
+    font-weight: bold;
+}
+
+.hero_section button {
+    margin-top: 2rem;
+}
+
+.hero_text {
+    width: 350px;
+    margin-right: 10rem;
+
+}
+
+.hero_section p {
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.hero_bg {
+    background-color: var(--color-primary);
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.highlights {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.highlights>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+padding-left: 2rem;
+padding-right: 2rem;
+
+}
+
+.containerlist {
+    padding: 0;
+    display: flex;
+    list-style: none;
+
+}
+
+.cardlist {
+    border-radius: 2rem;
+    margin: 1rem;
+    padding: 2rem;
+    list-style: none;
+    background-color: var(--color-highlight);
+}
+
+.cardproduct {
+    justify-items: center;
+}
+
+.cardproduct>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardproduct h3 {
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+}
+
+.cardproduct p {
+    color: var(--color-primary);
+}
+
+.testimonials{
+    padding-left: 5%;
+    padding-right: 5%; 
+    text-align: center;
+}
+
+.testimonials ul{
+    padding: 0;
+    display: flex;
+    list-style: none;
+padding: 0;
+}
+.testimonials li{
+   
+background-color: var(--color-highlight);
+margin: 1rem;
+padding: 1rem;
+border-radius: 1rem;
+}
+
+.testimonials p{
+    color: var(--color-highlight-2);
+}
+.testimonials img{
+    border-radius: 100%;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    position: relative;
+margin-bottom: 2rem;
+    /* align-items: center; */
+}
+
+.about h1,
+h2 {
+    margin: 0
+}
+
+.about h1 {
+    color: var(--color-primary-2);
+}
+
+.about h2,
+p {
+    color: var(--color-highlight-2);
+    font-weight: bold;
+}
+
+.abouttext {
+    width: 350px;
+    margin-right: 10rem;
+
+}
+
+.about p {
+    margin-top: 2rem;
+    text-align: justify;
+}

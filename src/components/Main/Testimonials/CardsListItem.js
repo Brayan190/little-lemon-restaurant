@@ -5,7 +5,7 @@ const CardsListItem = ({product}) => {
   
   return (
     <li>
-      <Card product={product}/>
+      <Card product={product} />
     </li>
   )
 }

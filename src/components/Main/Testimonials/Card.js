@@ -6,8 +6,8 @@ const Card = ({product}) => {
   return (
     <div>
       <h3>Ranking{product.raking}</h3>
-        <img src={SpecialImg(`./${product.img}`)} alt={product.name} width={300}/>
-      <h1>{product.name}</h1>
+        <img src={SpecialImg(`./${product.img}`)} alt={product.name} width={200}  height={200}/>
+      <h2>{product.name}</h2>
       <p>{product.review}</p>
     </div>
   )

@@ -1,13 +1,13 @@
 import React from 'react'
-import Logo from "../../assets/icons_assets/restauranfood.jpg"
+import Logo from "../../assets/icons_assets/Logo .svg"
 const Footer = () => {
   return (
     <footer>
-      <div>
+      <div className='container_img'>
         <img src={Logo} alt='logo' width={300}/>
       </div>
       <div>
-        <h1>Doomat Navigation</h1>
+        <h2>Doomat <br/>Navigation</h2>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/">About</a></li>
@@ -18,7 +18,7 @@ const Footer = () => {
         </ul>
       </div>
       <div>
-        <h1>Contact</h1>
+        <h2>Contact</h2>
         <ul>
           <li><a href="/">Adress</a></li>
           <li><a href="/">Phone number</a></li>
@@ -26,7 +26,7 @@ const Footer = () => {
         </ul>
       </div>
       <div>
-        <h1>Social Media</h1>
+        <h2>Social Media</h2>
         <ul>
           <li><a href="/">Adress</a></li>
           <li><a href="/">Phone number</a></li>
