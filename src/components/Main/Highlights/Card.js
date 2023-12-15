@@ -1,11 +1,12 @@
 import React from 'react'
+
 // import img from "../../../assets/icons_assets/greek salad.jpg"
 const SpecialImg = require.context("../../../assets/icons_assets")
 const Card = ({product}) => {
 
   return (
     <div className='cardproduct'>
-        <img src={SpecialImg(`./${product.img}`)} alt={product.name} width={300} height={250}/>
+        <img src={SpecialImg(`./${product.img}`)} alt={product.name}/>
       <div>
         <h2>{product.name}</h2>
         <h3>${product.price}</h3>

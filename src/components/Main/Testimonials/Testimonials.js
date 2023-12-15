@@ -3,31 +3,31 @@ import CardsListItem from './CardsListItem'
 const data = [
     {
         id: 1,
-        img: "profile.webp",
+        img: "profile1.webp",
         name: "Alfonso",
         review: "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. ",
-        raking:4,
+        ranking:4,
     },
     {
         id: 2,
-        img: "profile.webp",
-        name: "Alfonso",
+        img: "profile3.avif",
+        name: "Marian",
         review: "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. ",
-        raking:4,
+        ranking:3,
     },
     {
         id: 3,
-        img: "profile.webp",
-        name: "Alfonso",
+        img: "profile4.avif",
+        name: "Everlyn",
         review: "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. ",
-        raking:4,
+        ranking:4,
     },
     {
         id: 4,
-        img: "profile.webp",
-        name: "Alfonso",
+        img: "profile5.webp",
+        name: "Aiden",
         review: "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. ",
-        raking:4,
+        ranking:5,
     },
 ]
 const Testimonials = () => {
