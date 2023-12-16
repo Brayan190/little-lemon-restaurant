@@ -3,7 +3,7 @@ import Adrian from "../../../assets/icons_assets/Mario and Adrian A.jpg"
 const About = () => {
     
     return (
-        <div>
+        <div id='about'>
             <div className='about'>
                 <div className='abouttext'>
                     <h1>Little Lemon</h1>
