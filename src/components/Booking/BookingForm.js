@@ -29,24 +29,32 @@ const BookingForm = ({availableTimes,updateTimes}) => {
     }
     return (
         <>
-         <h1>Book Now </h1>
+         <h1 style={{textAlign:'center'}}>Book Now </h1>
             <form onSubmit={onsubmit}>
-                <label   htmlFor='res-date'>Choose date</label>
-                <input type="date" id="res-date" onChange={(e) => setAppointment({ ...appointment, date: e.target.value })} value={appointment.date} />
-                <label htmlFor='rest-time'>Choose time</label>
-                <select id="res-time " onChange={(e) => handleChangeTime(e)} value={appointment.time}>
-                    {availableTimes && availableTimes.map((time, index) => (
-                         <option key={index}>{time}</option>
-                    )
-                    )}
-                </select>
-                <label htmlFor='guests'>Number of guests</label>
-                <input type="number" placeholder="1" min="1" max="10" id="guests" onChange={(e) => setAppointment({ ...appointment, number_guest: e.target.value })} value={appointment.number_guest} />
-                <label htmlFor='occasion'>Occasion</label>
-                <select id="occasion" onChange={(e) => setAppointment({ ...appointment, occation: e.target.value })} value={appointment.occation}>
-                    <option>Birthday</option>
-                    <option>Anniversary</option>
-                </select>
+                <div>
+                    <label   htmlFor='res-date'>Choose date</label>
+                    <input type="date" id="res-date" onChange={(e) => setAppointment({ ...appointment, date: e.target.value })} value={appointment.date} />
+                </div>
+                <div>
+                    <label htmlFor='rest-time'>Choose time</label>
+                    <select id="res-time " onChange={(e) => handleChangeTime(e)} value={appointment.time}>
+                        {availableTimes && availableTimes.map((time, index) => (
+                             <option key={index}>{time}</option>
+                        )
+                        )}
+                    </select>
+                </div>
+                <div>
+                    <label htmlFor='guests'>Number of guests</label>
+                    <input type="number" placeholder="1" min="1" max="10" id="guests" onChange={(e) => setAppointment({ ...appointment, number_guest: e.target.value })} value={appointment.number_guest} />
+                </div>
+                <div>
+                    <label htmlFor='occasion'>Occasion</label>
+                    <select id="occasion" onChange={(e) => setAppointment({ ...appointment, occation: e.target.value })} value={appointment.occation}>
+                        <option>Birthday</option>
+                        <option>Anniversary</option>
+                    </select>
+                </div>
                 <input type="submit" value="Make Your reservation" />
             </form>
         </>

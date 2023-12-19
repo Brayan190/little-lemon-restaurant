@@ -8,3 +8,4 @@ test('Renders the BookingForm heading', () => {
     expect(headingElement).toBeInTheDocument();
 })
 
+// pendientes pruebas de la semana 3  Sistema de reserva de mesas

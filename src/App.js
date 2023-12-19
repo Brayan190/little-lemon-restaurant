@@ -5,7 +5,7 @@ import Header from './components/Header/Header';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Main from './components/Main/Main';
 import BookingPage from './components/Booking/BookingPage';
-import { useEffect, useReducer, useState } from 'react';
+import { useEffect, useReducer } from 'react';
 
 
 const reducer = (state, action) => {
@@ -18,6 +18,7 @@ const reducer = (state, action) => {
     case "INITIALIZE_TIMES":
       // Puedes personalizar esta lógica para establecer las horas iniciales
       const initialTimes = ['10:00 AM', '11:00 AM', '2:00 PM', '3:00 PM'];
+     
       return { ...state, availableTimes: initialTimes };
 
     default:
@@ -45,6 +46,12 @@ useEffect(() => {
 const updateTimes = (selectedDate) => {
   dispatch({ type: "UPDATE_TIMES", payload: selectedDate });
 };
+
+// const initializeTimes = async()=>{
+//   const date = new Date();
+//   const initialize = await fetchAPI(date);
+// console.log("inicial",initialize)
+// }
 
 return (
     <Router>
